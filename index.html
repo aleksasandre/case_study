@@ -5,39 +5,79 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Game Character Production Calculator</title>
 
-<style>
 body{
   margin:0;
-  font-family:Arial,sans-serif;
-  color:#111;
-  background: linear-gradient(135deg, #0f172a 0%, #1e293b 35%, #334155 70%, #0f172a 100%);
-  min-height:100vh;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color:#e5e7eb;
 }
 
 .container{
-  max-width:1100px;
-  margin:25px auto;
+  max-width:1000px;
+  margin:40px auto;
   padding:20px;
 }
 
 .card{
-  background: rgba(255,255,255,0.92);
-  border: 1px solid rgba(255,255,255,0.25);
-  border-radius:14px;
-  padding:18px;
-  margin-bottom:12px;
-  backdrop-filter: blur(6px);
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius:16px;
+  padding:20px;
+  margin-bottom:16px;
+  backdrop-filter: blur(10px);
 }
 
-h1{font-size:28px;margin-bottom:6px}
-.subtitle{color:#444;font-size:14px}
+h1,h3{
+  margin:0 0 10px 0;
+  color:#ffffff;
+}
 
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-label{font-size:13px;margin-top:10px;display:block}
-select{width:100%;padding:10px;border-radius:8px;border:1px solid #ddd;background:#fafafa}
-button{margin-top:15px;width:100%;padding:12px;background:black;color:white;border:none;border-radius:10px;font-weight:bold;cursor:pointer}
+.subtitle{
+  opacity:0.8;
+}
 
-.result{font-size:18px;margin-top:10px}
+.grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+}
+
+label{
+  font-size:13px;
+  margin-top:10px;
+  display:block;
+  opacity:0.9;
+}
+
+select{
+  width:100%;
+  padding:10px;
+  border-radius:10px;
+  border:none;
+  margin-top:5px;
+}
+
+button{
+  margin-top:15px;
+  width:100%;
+  padding:12px;
+  background: #6366f1;
+  color:white;
+  border:none;
+  border-radius:10px;
+  font-weight:bold;
+  cursor:pointer;
+  transition:0.2s;
+}
+
+button:hover{
+  background:#4f46e5;
+  transform:scale(1.02);
+}
+
+.result{
+  font-size:18px;
+  margin-top:10px;}
 
 .small{
   font-size:13px;
